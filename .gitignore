@@ -131,7 +131,7 @@ dmypy.json
 # DS_Store
 .DS_Store
 
-# VS Code
+# VS Code/Jupyter
 thesis.code-workspace
 .vscode
 
