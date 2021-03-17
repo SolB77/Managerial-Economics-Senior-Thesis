@@ -1,0 +1,53 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression Output for t = Three Months}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+            &          b1         &          b2         &          b3         &          b4         &          b5         \\
+\hline
+ISF         &      -3.003         &      -3.230         &      -3.244         &      -2.168         &      -2.155         \\
+            &     (-0.87)         &     (-0.94)         &     (-0.96)         &     (-0.67)         &     (-0.42)         \\
+[1em]
+CI          &      -0.983         &      -0.652         &      -0.480         &      -0.537         &      -4.616         \\
+            &     (-0.29)         &     (-0.19)         &     (-0.14)         &     (-0.17)         &     (-0.97)         \\
+[1em]
+three\_m\_diff\_volume&                     &       0.010\sym{*}  &       0.011\sym{*}  &       0.009         &      -0.005         \\
+            &                     &      (1.85)         &      (1.77)         &      (1.31)         &     (-0.32)         \\
+[1em]
+NASDAQ      &                     &                     &       4.841         &       5.356         &       5.072         \\
+            &                     &                     &      (0.90)         &      (1.50)         &      (0.93)         \\
+[1em]
+NYSE        &                     &                     &      11.577\sym{**} &       9.215\sym{***}&      12.441\sym{***}\\
+            &                     &                     &      (2.48)         &      (3.07)         &      (3.15)         \\
+[1em]
+three\_m\_diff\_sp500&                     &                     &                     &       0.966\sym{***}&       0.943         \\
+            &                     &                     &                     &      (3.33)         &      (1.55)         \\
+[1em]
+c.ISF#c.CI  &                     &                     &                     &                     &       7.991         \\
+            &                     &                     &                     &                     &      (1.29)         \\
+[1em]
+c.ISF#c.three\_m\_diff\_volume&                     &                     &                     &                     &       0.017         \\
+            &                     &                     &                     &                     &      (0.99)         \\
+[1em]
+c.ISF#c.NASDAQ&                     &                     &                     &                     &      -0.973         \\
+            &                     &                     &                     &                     &     (-0.14)         \\
+[1em]
+c.ISF#c.NYSE&                     &                     &                     &                     &      -7.212         \\
+            &                     &                     &                     &                     &     (-1.31)         \\
+[1em]
+c.ISF#c.three\_m\_diff\_sp500&                     &                     &                     &                     &       0.060         \\
+            &                     &                     &                     &                     &      (0.09)         \\
+[1em]
+\_cons      &       4.762         &       4.075         &      -4.926         &      -5.173         &      -4.427         \\
+            &      (1.39)         &      (1.18)         &     (-0.95)         &     (-1.52)         &     (-1.23)         \\
+\hline
+\(N\)       &         128         &         128         &         128         &         128         &         128         \\
+adj. \(R^{2}\)&      -0.009         &       0.005         &       0.031         &       0.186         &       0.178         \\
+F           &       0.383         &       1.452         &       2.119         &       8.366         &       6.501         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{6}{l}{\footnotesize [1] Standard Errors are 'STATA' heteroscedasticity robust}\\
+\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
